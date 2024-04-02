@@ -1,11 +1,19 @@
 title: Krzysztof Rogowski # your name (or website title) here
 logo: "/images/ProfileImage_Krzysztof.jpg?raw=true" # your photo (or logo) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
-  Technology Consultant at Int3grate Tech Inc 
+  Lead Technology Consultant
+  <br><br>
+  Int3grate Tech Inc.
   <br><br>
   Oakville, Ontario, Canada 
   <br><br>
+  <br><br>
+  [Download Resume](/files/Krzysztof_Rogowski.pdf) -/([pdf](/files/Krzysztof_Rogowski.pdf)/[text](/files/Krzysztof_Rogowski.txt)/)
+  <br><br>
   <a href="www.linkedin.com/in/krzysztof-rogowski-1199036">View My LinkedIn Profile</a> 
+  <br><br>
+  <br><br>
+  <br><br>
   
 remote_theme: pages-themes/minimal@v0.2.0
 plugins:

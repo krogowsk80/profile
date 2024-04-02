@@ -4,22 +4,46 @@ Email: kjrogowski@yahoo.com
 
 Professional Profile:
 
-13+ years of expertise in Business Intelligence Analytics, Data Engineering, and Solution Design
+13+ years of expertise in Solution Architecture, Solution Design, Business Intelligence Analytics and Data Engineering
 Skilled in Agile BI methodologies and proficient in Microsoft Azure ecosystem and cloud technologies
 Experienced with Databricks, Synapse, Azure Data Factory, Power BI, SQL Server, Informatica, Cognos, and more
 Proficient in designing logical and physical data models, managing MDM hierarchies, and implementing SCDs
 Strong ability to gather and analyze business requirements, innovate solutions, and optimize processes
 Effective communicator and team player with a track record of successfully managing projects across various industries including Government, Telecommunication, Insurance, and Military sectors
 
+Key Skills:
+
+- Architecture Design
+- Client Relationship Management
+- Solution Design
+- Designing logical and physical data models 
+- Data Engineering 
+- Architecture Principles
+- Agile BI methodologies 
+- Optimizing & Automating processes 
+- Proficiency in Microsoft Azure ecosystem and cloud technologies 
+- Gathering and analyzing business requirements
+- Team collaboration
+- Effective communication 
+- Project management across various industries, including Government, Telecommunication and Insurance
+- Experience with Databricks, Synapse, Azure Data Factory, Power BI, SQL Server, Informatica, Cognos, and more 
+
 Academic Profile:
 
 Honors Bachelor of Computer Science with Software Engineering
 University of Waterloo – Waterloo, Ontario
 
+Technical Experience:
+
+BI Suites: Power BI, Power BI Report Server, Databricks, SSAS, SSRS, Cognos 8, 10 
+Database: SQL Server 2012-2019, ORACLE 8i/9i/10g/11g/12c, DB2 (JDE E1)
+ETL Tools: Databricks, Synapse, ADF, pyspark, SSIS, Informatica PowerCenter 7-10, Pentaho, IDQ, Profiling
+Languages: DAX, python, MDM, Power Query, M, SQL, PL/SQL (DDL & DML), C#, Power Shell, Java, XML, JSP, HTML & ASP, YAML, BICEP
+Other Tech: Azure, Azure DevOps, Azure B&D, GIT, DAX Studio, Tabular Editor, SQL Server Profiler, SQL Server Profiler, PBIDS, Sharepoint.com, Sharepoint, REST API, ASP.NET
+Other Tools: MS Project, VSS, MS Office, Visual Studio 2015, 2017, 2019, MS Visio, ERWin
 Employment Experience:
 
-
-Role: BI Architect / Data Engineer
+Role: BI Solution Architect / Data Engineer
 Term: Feb 2014 to Present
 Company: Int3grate Tech Inc
 Location: Toronto, ON, Canada
@@ -53,7 +77,7 @@ Maintained Power BI reports, dashboards, and data sets, ensuring alignment with 
 Collaborated with business stakeholders to capture requirements and liaised with technical teams to ensure their implementation.
 Facilitated regular meetings with business users, management, architecture, and IT teams to discuss requirements and ensure alignment.
 Coordinated deliverables with various technology teams, led solution design activities, and conducted knowledge transfer sessions.
-Created and maintained key knowledge transfer documents to facilitate onboarding of new team members.
+Created and maintained key knowledge transfer documents to facilitate on-boarding of new team members.
 ----------------------------------------------------------------------------------------------------
 Role: BI Consultant / Solution Designer / Solution Development Team Lead
 Term: May 2019 to 2021
@@ -78,7 +102,11 @@ Conducted knowledge transfer sessions and ensured documentation availability for
 Established CI/CD processes in Microsoft Azure DevOps for fast and accurate code deployment.
 Utilized PowerShell for Azure AAD queries and configuration.
 Managed Informatica updates and designed/implemented new Rest API interfaces for specialized use cases.
-----------------------------------------------------------------------------------------------------
+
+
+
+
+
 Role: BI Consultant 
 Term: Mar 2019 to May 2019
 Company: CDIC
@@ -126,7 +154,6 @@ Hand on experience at every level of application development in a variety of pro
 Performed role of subject matter expert on three critical systems; namely, the Marketing Data-mart, a reporting system for large customer and a security management system.
 Performed the lead architect role on large initiative aimed at transitioning the support of over 100 applications from a sunset Data Warehouse department to our department.  Drove application transition plan, motivated and advised team members.
 Gained experience working on initiatives for Marketing, Finance, Internal administration & management and various reporting initiatives. 
-----------------------------------------------------------------------------------------------------
 
 Technical Experience:
 

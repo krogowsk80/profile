@@ -14,7 +14,7 @@
 ### Recent Projects
 Note: Project details below are generic and altered to keep client data and solution private
 
-#### [Azure Databricks Data Lake](/sample_page.md)
+#### [Azure Databricks Data Lake](/index.md)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 A modern Data Warehouse/Mart solution loading data into the Medalion architecture(bronse/silver/gold)
@@ -27,7 +27,7 @@ A modern Data Warehouse/Mart solution loading data into the Medalion architectur
 - Data Target: Databricks Delta Tables
 
 ---
-#### [ On Prem Date Warehouse with PBI Reports via Report Server](sample_page)
+#### [ On Prem Date Warehouse with PBI Reports via Report Server](/index.md)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 A Data Warehouse/Mart solution loading data into Staging/Data Warehouse/Data Martbronse.  Project Portal was implemented via SharePoint to help manage news, reports, requests, documents.  Due to restrictions and security requirements data was kept in a internal Cloud, reporting was rendered via PBI Report Server.   
@@ -42,9 +42,8 @@ A Data Warehouse/Mart solution loading data into Staging/Data Warehouse/Data Mar
 - Data Sources: Oracle DB, Rest API connected to SSAS Tabular(TAB) cube, Many CSV files, Many Excel Files, Beyond2020 files, Sharepoint Lists
 - Data Target: Microsoft SQL Server 
 
-
 ---
-#### [Data Pipeline Projects](http://example.com/)
+#### [Data Pipeline Projects](/index.md)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 A set of Projects where primary goal was to move and transform the data from system to system.  High volumne, dynamic processing and design.
 
@@ -52,7 +51,8 @@ A set of Projects where primary goal was to move and transform the data from sys
 - Database: Microsoft SQL Server
 - Tech: REST API, JSON, Web Services
 
-#### [Classic Data Warehouse/Data Mart](http://example.com/)
+---
+#### [Classic Data Warehouse/Data Mart](/index.md)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 A variety of Data Warehouses projects.
 
@@ -66,6 +66,7 @@ A variety of Data Warehouses projects.
 - Data Target: Microsoft SQL Server 
 
 
+<!--
 ---
 
 ### Category Name 3
@@ -77,7 +78,7 @@ A variety of Data Warehouses projects.
 - [Project 5 Title](http://example.com/)
 
 ---
-
+-->
 
 
 

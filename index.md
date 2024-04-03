@@ -14,8 +14,8 @@
 ### Recent Projects
 Note: Project details below are generic and altered to keep client data and solution private
 
-#### [Azure Databricks Data Lake](/index.md)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+#### Azure Databricks Data Lake
+<img src="images/DatabricksWithAzureAchitecture.jpg?raw=true"/>
 
 A modern Data Warehouse/Mart solution loading data into the Medalion architecture(bronse/silver/gold)
 
@@ -27,8 +27,8 @@ A modern Data Warehouse/Mart solution loading data into the Medalion architectur
 - Data Target: Databricks Delta Tables
 
 ---
-#### [ On Prem Date Warehouse with PBI Reports via Report Server](/index.md)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+#### On Prem Date Warehouse with PBI Reports via Report Server
+<img src="images/LocalDataWarehouse.jpg?raw=true"/>
 
 A Data Warehouse/Mart solution loading data into Staging/Data Warehouse/Data Martbronse.  Project Portal was implemented via SharePoint to help manage news, reports, requests, documents.  Due to restrictions and security requirements data was kept in a internal Cloud, reporting was rendered via PBI Report Server.   
 
@@ -43,8 +43,8 @@ A Data Warehouse/Mart solution loading data into Staging/Data Warehouse/Data Mar
 - Data Target: Microsoft SQL Server 
 
 ---
-#### [Data Pipeline Projects](/index.md)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+#### Data Pipeline Projects
+<img src="images/ProcessingPipeline.jpg?raw=true"/>
 A set of Projects where primary goal was to move and transform the data from system to system.  High volumne, dynamic processing and design.
 
 - Processing: C#, Java
@@ -52,8 +52,8 @@ A set of Projects where primary goal was to move and transform the data from sys
 - Tech: REST API, JSON, Web Services
 
 ---
-#### [Classic Data Warehouse/Data Mart](/index.md)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+#### Classic Data Warehouse/Data Mart
+<img src="images/MatureDataWarehouseMart.jpg?raw=true"/>
 A variety of Data Warehouses projects.
 
 - Role: Solution Designer/Architect/Lead Developer/Developer.

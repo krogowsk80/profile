@@ -28,11 +28,6 @@
 <body>
    <div class="wrapper">
       <header>
-         <style>
-            .sidebar-container {
-                width: 250px; /* Change this value to adjust the width of the sidebar */
-            }
-        </style>
          <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
          {% if site.logo %}
          <img src="{{site.logo | relative_url}}" alt="Logo" />

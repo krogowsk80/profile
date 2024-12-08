@@ -63,7 +63,23 @@ df_dq_rules = spark.createDataFrame(rules_data, schema=rules_schema)
 
 Incorporate the data quality translation rules as a step in your ETL pipeline. Load original data rows into a staging table and apply corrections in subsequent processing.
 
-
+Eg. An example to apply translation
+```python
+def translate_DQ_rule(dfSrc:DataFrame, strSrcColumn:str, dfDQTranslation:DataFrame):
+    """
+    Arguments:
+        dfSrc (DataFrame): Dataframe pointing to the data to be inserted.
+        strSrcColumn (str): Column in target_dt to use to lookup against Code_Value_ID
+        dfDQTranslation (str): Dataframe with translations
+    Result:
+        Apply Data Quality Translation for given field
+    Sample: 
+        dfSrc = translate_DQ_rule(dfSrc, "CITY", sdfDQTranslation)
+    """
+    ## Apply translation
+    ## //ToDo
+    return dfSrc
+```
 
 ### Recommended practice:
 Apply corrections as **Type 2 Slowly Changing Dimensions (SCD)** to preserve the original row and track changes. This approach ensures a complete audit trail of both raw and corrected data.

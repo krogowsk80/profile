@@ -1,3 +1,4 @@
+theme: jekyll-theme-minimal
 title: Krzysztof Rogowski # your name (or website title) here
 logo: "/images/ProfileImage_Krzysztof.jpg?raw=true" # your photo (or logo) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
@@ -17,7 +18,7 @@ description: > # your text below (remove <br> elements if you don't need line br
   <br><br>
   <br><br>
   
-remote_theme: pages-themes/minimal@v0.2.0
+##KR: remote_theme: pages-themes/minimal@v0.2.0
 plugins:
 - jekyll-remote-theme
 google_analytics: G-3LGNXMWLWJ # your Google Analytics tracking ID here

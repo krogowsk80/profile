@@ -3,12 +3,10 @@
 ---
 ### Professional Profile
 
-- 13+ years of expertise in Business Intelligence Analytics, Data Engineering, and Solution Design
-- Skilled in Agile BI methodologies and proficient in Microsoft Azure ecosystem and cloud technologies
-- Experienced with Databricks, Synapse, Azure Data Factory, Power BI, SQL Server, Informatica, Cognos, and more
-- Proficient in designing logical and physical data models, managing MDM hierarchies, and implementing SCDs
-- Strong ability to gather and analyze business requirements, innovate solutions, and optimize processes
-- Effective communicator and team player with a track record of successfully managing projects across various industries including Government, Telecommunication, Insurance, and Military sectors
+- 13+ years of expertise in Enterprise Data Architecture and Cloud Modernization within highly regulated sectors (Banking, Pension, Government).
+- Specializing in transitioning legacy financial systems to Azure Databricks Lakehouse architectures, ensuring OSFI and PCI compliance, and delivering scalable frameworks for regulatory reporting
+- Experienced with Azure, Databricks, PySpark, Synapse, Azure Data Factory, Azure Fabric + Power BI, SQL Server, Informatica, Cognos, and more
+- Proficient in designing Solution Architecture, Data Architecture, defining Development Strategy, Test Strategy, Automated Deployment via DevOps and implementation of solution, CI/CD.
 
 ---
 ### Recent Projects

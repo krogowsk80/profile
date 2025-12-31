@@ -3,16 +3,10 @@ title: Krzysztof Rogowski # your name (or website title) here
 logo: "/images/ProfileImage_Krzysztof.jpg?raw=true" # your photo (or logo) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
   <br>
-  Lead Technology Consultant
-  <br>
-  Int3grate Tech Inc.
-  <br>
-  Oakville, Ontario, Canada 
+  Solution Architecture | Data Modeling | Cloud Data Warehousing | Enterprise BI Strategy | Data Governance | Senior Engineering Leadership
   <br>
   <br>
-  <a href="https://drive.google.com/file/d/1RKcj4QvmVxuukPM0eXmz6S3cOqgDE7ML/view?usp=drive_link" download>Download Resume</a>
-  (<a href="https://krogowsk80.github.io/profile/files/Krzysztof_Rogowski.pdf">pdf</a>/<a href="https://krogowsk80.github.io/profile/files/Krzysztof_Rogowski.txt">txt</a>)
-  <br><br>
+  <br>
   <a href="https://www.linkedin.com/in/krzysztof-rogowski-1199036">View My LinkedIn Profile</a> 
   <br><br>
   <br><br>
@@ -22,3 +16,14 @@ description: > # your text below (remove <br> elements if you don't need line br
 plugins:
 - jekyll-remote-theme
 google_analytics: G-3LGNXMWLWJ # your Google Analytics tracking ID here
+navigation:
+  - title: Strategic Overview
+    url: /
+  - title: Architectural Case Studies
+    url: /architectural-case-studies.html
+  - title: Solutions & Capabilities
+    url: /solutions-and-capabilities.html
+#  - title: Insights
+#    url: /insights.html
+  - title: Work With Me
+    url: /work-with-me.html

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+   
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3LGNXMWLWJ"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      
+      gtag('config', 'G-3LGNXMWLWJ');
+   </script>
+   
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>An approach to handling Data Quality in ETL Pipelines: Practices and Strategies | Krzysztof Rogowski</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="An approach to handling Data Quality in ETL Pipelines: Practices and Strategies" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Solution Architecture Data Modeling Cloud Data Warehousing Enterprise BI Strategy Data Governance Senior Engineering Leadership View My LinkedIn Profile" />
+<meta property="og:description" content="Solution Architecture Data Modeling Cloud Data Warehousing Enterprise BI Strategy Data Governance Senior Engineering Leadership View My LinkedIn Profile" />
+<link rel="canonical" href="http://0.0.0.0:4000/pages/Databricks/Databricks_HandleDataQuality.html" />
+<meta property="og:url" content="http://0.0.0.0:4000/pages/Databricks/Databricks_HandleDataQuality.html" />
+<meta property="og:site_name" content="Krzysztof Rogowski" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="An approach to handling Data Quality in ETL Pipelines: Practices and Strategies" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Solution Architecture Data Modeling Cloud Data Warehousing Enterprise BI Strategy Data Governance Senior Engineering Leadership View My LinkedIn Profile","headline":"An approach to handling Data Quality in ETL Pipelines: Practices and Strategies","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://0.0.0.0:4000/images/ProfileImage_Krzysztof.jpg?raw=true"}},"url":"http://0.0.0.0:4000/pages/Databricks/Databricks_HandleDataQuality.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+   <link rel="stylesheet" href="/assets/css/style.css?v=7274ebaec8f4da4ff619900e5dddde93bb2b5a74">
+   <!--[if lt IE 9]>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+   <![endif]-->
+   <style>
+      .topnav {
+         background-color: #ffffff;
+         border-bottom: 1px solid #e8e8e8;
+         width: 100%;
+         text-align: center;
+         padding: 1rem 0;
+      }
+      .topnav ul {
+         margin: 0;
+         padding: 0;
+         list-style: none;
+      }
+      .topnav li {
+         display: inline-block;
+         margin: 0 1em;
+      }
+      .topnav a {
+         text-decoration: none;
+         color: #424242;
+         font-weight: bold;
+      }
+      #theme-toggle {
+         background: none;
+         border: none;
+         cursor: pointer;
+         font-size: 1.2em;
+         vertical-align: middle;
+      }
+      body.dark-mode {
+         background-color: #222;
+         color: #ddd;
+      }
+      body.dark-mode .topnav {
+         background-color: #333;
+         border-bottom: 1px solid #444;
+      }
+      body.dark-mode .topnav a, body.dark-mode .topnav li {
+         color: #ddd;
+      }
+      body.dark-mode a {
+         color: #58a6ff;
+      }
+   </style>
+</head>
+<body>
+   <nav class="topnav">
+      <ul>
+         
+         <li><a href="/">Strategic Overview</a></li>
+         
+         <li><a href="/architectural-case-studies.html">Architectural Case Studies</a></li>
+         
+         <li><a href="/solutions-and-capabilities.html">Solutions & Capabilities</a></li>
+         
+         <li><a href="/work-with-me.html">Work With Me</a></li>
+         
+         <li><button id="theme-toggle" title="Toggle Night Mode">🌙</button></li>
+      </ul>
+   </nav>
+   <div class="wrapper">
+      <header>
+         <h1><a href="http://0.0.0.0:4000/">Krzysztof Rogowski</a></h1>
+         
+         <img src="/images/ProfileImage_Krzysztof.jpg?raw=true" alt="Logo" />
+         
+         
+         <p><br> Solution Architecture | Data Modeling | Cloud Data Warehousing | Enterprise BI Strategy | Data Governance | Senior Engineering Leadership <br> <br> <br> <a href="https://www.linkedin.com/in/krzysztof-rogowski-1199036">View My LinkedIn Profile</a>  <br><br> <br><br> <br><br>
+</p>
+         
+         <p class="view"><a href="/contact.html" style="background-color: #2ea44f; color: white; padding: 8px 16px; text-decoration: none; border-radius: 4px; font-weight: bold; display: inline-block;">Contact Me</a></p>
+
+         
+         <!--         
+            <p class="view"><a href="https://github.com/krogowsk80/profile">View the Project on GitHub <small>krogowsk80/profile</small></a></p>
+         -->   
+         
+         
+               
+      </header>
+      <section>
+         <h1 id="an-approach-to-handling-data-quality-in-etl-pipelines-practices-and-strategies">An approach to handling Data Quality in ETL Pipelines: Practices and Strategies</h1>
+
+<p>Data quality is the cornerstone of any successful data-driven initiative. Ensuring accurate, complete, and reliable data is crucial for analytics, decision-making, and operational processes. This article outlines an approach to handling data quality issues, such as invalid city names, missing or incorrect postal codes, and inconsistent field values, using modern ETL pipelines.</p>
+
+<p>Note that it is recommanded to use a 3-rd party data quality utility if one is available followng the guidelines and best practises of your organiztion.</p>
+
+<hr />
+
+<h2 id="1-utilize-data-profiling-to-identify-issues">1. Utilize Data Profiling to Identify Issues</h2>
+
+<p>Before addressing data quality issues, it’s essential to understand your data. Data profiling helps uncover note only data type, volume, but also patterns, anomalies, and valid value ranges for each field.</p>
+
+<p>The list of valid values can be later used in defining data quality rules.</p>
+
+<h3 id="actions-to-take">Actions to take:</h3>
+<ul>
+  <li>Identify valid values for fields such as city names or postal codes.</li>
+  <li>Detect missing, null, or out-of-range values.</li>
+  <li>Highlight inconsistencies like misspelled categories (e.g., “Mal” instead of “Male”).</li>
+</ul>
+
+<hr />
+
+<h2 id="2-define-a-data-quality-translation-rule-mapping-table">2. Define a Data Quality Translation Rule Mapping Table</h2>
+
+<p>Standardizing corrections is crucial for repeatability and transparency. A <strong>data quality translation rule mapping table</strong> enables this by explicitly documenting transformations.</p>
+
+<h3 id="key-fields-to-include">Key fields to include:</h3>
+<ul>
+  <li><strong>Column Name</strong>: The field to correct (e.g., “CITY”).</li>
+  <li><strong>Source Name</strong>: Origin of the data. ( e.g. “Customer_Survey”)</li>
+  <li><strong>Source Value</strong>: Invalid or inconsistent value (e.g., “toront”).</li>
+  <li><strong>Target Value</strong>: Corrected value (e.g., “Toronto”).</li>
+  <li><strong>Create Date</strong>: When the rule was defined. (e.g. today())</li>
+  <li><strong>Enabled Flag</strong>: Indicates if the rule is active. (e.g. Lit(‘Y’))</li>
+</ul>
+
+<p>This approach ensures consistent corrections across ETL processes.  Deploy this table in your ETL schema or DQ(data quality) scheduma.</p>
+
+<h2 id="example-creating-a-delta-table-for-data-quality-rules-in-databricks">Example: Creating a Delta Table for Data Quality Rules in Databricks</h2>
+
+<p>To efficiently manage data quality rules, you can store them in a Delta table for versioning, scalability, and query performance. Here’s an example of how to set up a Delta table for this purpose:</p>
+
+<p>Note that this should be stored in a table/csv/json, loaded to a dataframe and cashed for performance; but for examples sake, we will use a simple object.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Define the schema for the data quality rules
+</span><span class="n">rules_schema</span> <span class="o">=</span> <span class="n">StructType</span><span class="p">([</span>
+    <span class="n">StructField</span><span class="p">(</span><span class="s">"column_name"</span><span class="p">,</span> <span class="n">StringType</span><span class="p">(),</span> <span class="bp">True</span><span class="p">),</span>
+    <span class="n">StructField</span><span class="p">(</span><span class="s">"source_name"</span><span class="p">,</span> <span class="n">StringType</span><span class="p">(),</span> <span class="bp">True</span><span class="p">),</span>
+    <span class="n">StructField</span><span class="p">(</span><span class="s">"source_value"</span><span class="p">,</span> <span class="n">StringType</span><span class="p">(),</span> <span class="bp">True</span><span class="p">),</span>
+    <span class="n">StructField</span><span class="p">(</span><span class="s">"target_value"</span><span class="p">,</span> <span class="n">StringType</span><span class="p">(),</span> <span class="bp">True</span><span class="p">),</span>
+    <span class="n">StructField</span><span class="p">(</span><span class="s">"create_date"</span><span class="p">,</span> <span class="n">DateType</span><span class="p">(),</span> <span class="bp">True</span><span class="p">),</span>
+    <span class="n">StructField</span><span class="p">(</span><span class="s">"enabled_flag"</span><span class="p">,</span> <span class="n">BooleanType</span><span class="p">(),</span> <span class="bp">True</span><span class="p">)</span>
+<span class="p">])</span>
+<span class="c1"># Create a sample dataset of data quality rules
+</span><span class="n">rules_data</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="s">"CITY"</span><span class="p">,</span> <span class="s">"external_source"</span><span class="p">,</span> <span class="s">"toront"</span><span class="p">,</span> <span class="s">"Toronto"</span><span class="p">,</span> <span class="s">"2024-12-01"</span><span class="p">,</span> <span class="bp">True</span><span class="p">),</span>
+    <span class="p">(</span><span class="s">"CITY"</span><span class="p">,</span> <span class="s">"external_source"</span><span class="p">,</span> <span class="s">"toronto"</span><span class="p">,</span> <span class="s">"Toronto"</span><span class="p">,</span> <span class="s">"2024-12-01"</span><span class="p">,</span> <span class="bp">True</span><span class="p">),</span>
+<span class="p">]</span>
+
+<span class="c1"># Create a DataFrame with the sample data
+</span><span class="n">df_dq_rules</span> <span class="o">=</span> <span class="n">spark</span><span class="p">.</span><span class="n">createDataFrame</span><span class="p">(</span><span class="n">rules_data</span><span class="p">,</span> <span class="n">schema</span><span class="o">=</span><span class="n">rules_schema</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="3-integrate-data-quality-rules-into-etl-processes">3. Integrate Data Quality Rules into ETL Processes</h2>
+
+<p>Incorporate the data quality translation rules as a step in your ETL pipeline. Load original data rows into a staging table and apply corrections in subsequent processing.</p>
+
+<p>Eg. An example to apply translation</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">translate_DQ_rule</span><span class="p">(</span><span class="n">dfSrc</span><span class="p">:</span><span class="n">DataFrame</span><span class="p">,</span> <span class="n">strSrcColumn</span><span class="p">:</span><span class="nb">str</span><span class="p">,</span> <span class="n">dfDQTranslation</span><span class="p">:</span><span class="n">DataFrame</span><span class="p">):</span>
+    <span class="s">"""
+    Arguments:
+        dfSrc (DataFrame): Dataframe pointing to the data to be inserted.
+        strSrcColumn (str): Column in target_dt to use to lookup against Code_Value_ID
+        dfDQTranslation (str): Dataframe with translations
+    Result:
+        Apply Data Quality Translation for given field
+    Sample: 
+        dfSrc = translate_DQ_rule(dfSrc, "CITY", sdfDQTranslation)
+    """</span>
+    <span class="c1">## Apply translation
+</span>    <span class="c1">## //ToDo
+</span>    <span class="k">return</span> <span class="n">dfSrc</span>
+</code></pre></div></div>
+
+<h3 id="recommended-practice">Recommended practice:</h3>
+<p>Apply corrections as <strong>Type 2 Slowly Changing Dimensions (SCD)</strong> to preserve the original row and track changes. This approach ensures a complete audit trail of both raw and corrected data.</p>
+
+<p>Any data quality transformations should be placed in a seperate library file with other user defined functions(UDFs) so that they can be shared with other notebook or projects.</p>
+
+<p>eg.you can import a library notebook via:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%</span><span class="n">run</span> <span class="p">..</span><span class="o">/</span><span class="p">..</span><span class="o">/</span><span class="n">libs</span><span class="o">/</span><span class="n">nt_library_DataQuality</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="4-track-data-quality-issues">4. Track Data Quality Issues</h2>
+
+<p>Enhance the ETL process to log every data quality issue detected during loading. Maintain detailed records or generate summary reports showing the number of issues per field.</p>
+
+<h3 id="benefits">Benefits:</h3>
+<ul>
+  <li>Provides transparency into the health of your dataset.</li>
+  <li>Identifies recurring issues that need systemic fixes (e.g., data entry errors).</li>
+</ul>
+
+<hr />
+
+<h2 id="5-generate-data-quality-reports">5. Generate Data Quality Reports</h2>
+
+<p>Set up regular reporting on key data quality metrics, including:</p>
+<ul>
+  <li>The number of corrections applied by field.</li>
+  <li>Trends in data quality over time.</li>
+  <li>New or unexpected values in categorical columns.</li>
+</ul>
+
+<p>These reports empower teams to monitor improvements and address emerging problems.</p>
+
+<hr />
+
+<h2 id="6-leverage-external-apis-for-advanced-corrections">6. Leverage External APIs for Advanced Corrections</h2>
+
+<p>For fields like addresses, enrich your data with external APIs. For instance, a postal service API can validate and correct addresses based on authoritative databases.</p>
+
+<h3 id="best-practices">Best practices:</h3>
+<ul>
+  <li>Maintain a mapping of API corrections for review and approval to prevent overcorrection.</li>
+  <li>Use APIs selectively for high-value data fields to balance cost and quality.</li>
+</ul>
+
+<h3 id="example-workflow-for-address-validation">Example Workflow for Address Validation</h3>
+
+<ol>
+  <li><strong>Original Data</strong>: Load raw records into a staging table.</li>
+  <li><strong>Profile Data</strong>: Identify invalid or incomplete addresses.</li>
+  <li><strong>Enrich Data</strong>: Query the API for potential corrections.</li>
+  <li><strong>Review/Approve</strong>: Implement a mechanism for manual review of corrections, if needed.</li>
+  <li><strong>Apply Corrections</strong>: Update data as a Type 2 change in the main table.</li>
+</ol>
+
+<hr />
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Handling data quality issues requires a structured, scalable approach. By leveraging data profiling, rule-based transformations, external APIs, and detailed reporting, organizations can improve the accuracy and reliability of their datasets.</p>
+
+<p>With these steps integrated into your ETL pipeline, you’ll be well-equipped to tackle even the most complex data quality challenges, driving better insights and business outcomes.</p>
+
+<hr />
+
+<p><strong>What strategies have you implemented for managing data quality in your pipelines? Share your thoughts below!</strong></p>
+
+      </section>
+      <!--
+      <footer>
+         
+         <p>This project is maintained by <a href="https://github.com/krogowsk80">krogowsk80</a></p>
+         
+         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+      -->
+   </div>
+   <script src="/assets/js/scale.fix.js"></script>
+   <script>
+      const toggleButton = document.getElementById('theme-toggle');
+      const body = document.body;
+      
+      // Check local storage
+      if (localStorage.getItem('theme') === 'dark') {
+         body.classList.add('dark-mode');
+         toggleButton.innerText = '☀️';
+      }
+
+      toggleButton.addEventListener('click', () => {
+         body.classList.toggle('dark-mode');
+         const isDark = body.classList.contains('dark-mode');
+         localStorage.setItem('theme', isDark ? 'dark' : 'light');
+         toggleButton.innerText = isDark ? '☀️' : '🌙';
+      });
+   </script>
+</body>
+</html>

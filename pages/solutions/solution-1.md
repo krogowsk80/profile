@@ -4,7 +4,7 @@ title: Azure Databricks Data Lake
 ---
 # Azure Databricks Data Lake
 
-<img src="images/DatabricksWithAzureAchitecture.jpg?raw=true"/>
+<img src="/images/DatabricksWithAzureAchitecture.jpg?raw=true"/>
 
 A modern Data Warehouse/Mart solution loading data into the Medalion architecture(bronse/silver/gold)
 

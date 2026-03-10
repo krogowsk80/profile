@@ -4,7 +4,7 @@ title: On Prem Data Warehouse with PBI Reports
 ---
 # On Prem Date Warehouse with PBI Reports via Report Server
 
-<img src="images/LocalDataWarehouse.jpg?raw=true"/>
+<img src="/images/LocalDataWarehouse.jpg?raw=true"/>
 
 A Data Warehouse/Mart solution loading data into Staging/Data Warehouse/Data Martbronse.  Project Portal was implemented via SharePoint to help manage news, reports, requests, documents.  Due to restrictions and security requirements data was kept in a internal Cloud, reporting was rendered via PBI Report Server.   
 

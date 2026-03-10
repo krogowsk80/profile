@@ -4,7 +4,7 @@ title: Classic Data Warehouse/Data Mart
 ---
 # Classic Data Warehouse/Data Mart
 
-<img src="images/MatureDataWarehouseMart.jpg?raw=true"/>
+<img src="/images/MatureDataWarehouseMart.jpg?raw=true"/>
 A variety of Data Warehouses projects.
 
 - Role: Solution Designer/Architect/Lead Developer/Developer.

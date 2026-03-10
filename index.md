@@ -1,6 +1,7 @@
-## Portfolio
-
 ---
+layout: default
+title: Portfolio
+--- 
 ### Professional Profile
 
 With over 20 years of experience, I specialize in architecting and executing the migration of complex, on-premise data ecosystems to modern cloud platforms (Databricks, Azure, Fabric). My focus is on delivering "zero-failure" transitions for enterprise-scale initiatives that serve up to 22,000 users.

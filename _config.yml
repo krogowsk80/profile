@@ -19,6 +19,8 @@ google_analytics: G-3LGNXMWLWJ # your Google Analytics tracking ID here
 navigation:
   - title: Strategic Overview
     url: /
+  - title: Insights
+    url: /insights.html
   - title: Architectural Case Studies
     url: /architectural-case-studies.html
   - title: Solutions & Capabilities

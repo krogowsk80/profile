@@ -1,0 +1,7 @@
+# pack-refs with: peeled fully-peeled sorted 
+0687cd2bd73d21c65746e8b366ea511ea71e00f7 refs/heads/ApplyUxUpdate
+8f02ec7714de5cad0509dcbd965ed70cba85213f refs/heads/develop
+4f71d219531150ecd16a9b148bf610021c31792b refs/heads/master
+8a2ae0babef98f335819b48378da5c54f300f41d refs/heads/post/2026-01-15-example-insight-post
+bb68b999d4365c199682a9af708df95baecf31b6 refs/heads/post/2026-02-25-azure-databricks-open-lakehouse
+a55f36dd6c4d2694cb08f5fb59a0d4975a3124cc refs/heads/post/2026-02-25-databricks-intelligence-platform

@@ -31,7 +31,7 @@
 {"@context":"https://schema.org","@type":"WebPage","description":"Solution Architecture Data Modeling Cloud Data Warehousing Enterprise BI Strategy Data Governance Senior Engineering Leadership View My LinkedIn Profile","headline":"Insights","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://0.0.0.0:4000/images/ProfileImage_Krzysztof.jpg?raw=true"}},"url":"http://0.0.0.0:4000/insights.html"}</script>
 <!-- End Jekyll SEO tag -->
 
-   <link rel="stylesheet" href="/assets/css/style.css?v=7274ebaec8f4da4ff619900e5dddde93bb2b5a74">
+   <link rel="stylesheet" href="/assets/css/style.css?v=45d2e0de9aba987aa15b1097977f1cdfe9bfff9b">
    <!--[if lt IE 9]>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
    <![endif]-->
@@ -86,6 +86,8 @@
          
          <li><a href="/">Strategic Overview</a></li>
          
+         <li><a href="/insights.html">Insights</a></li>
+         
          <li><a href="/architectural-case-studies.html">Architectural Case Studies</a></li>
          
          <li><a href="/solutions-and-capabilities.html">Solutions & Capabilities</a></li>
@@ -118,24 +120,51 @@
       <section>
          <h1 id="insights">Insights</h1>
 
-<h3 id="legacy-to-cloud-transformation"><a href="insight-1.html">Legacy-to-Cloud Transformation</a></h3>
-<p>Migrating to the cloud requires understanding the “on-premise DNA” (SQL Server, Oracle, Hadoop) to successfully translate it into modern, cost-efficient cloud architectures.</p>
+<h3 id="type1type2-slowly-changing-dimensionscd-design"><a href="/pages/insights/insight-1.html">Type1/Type2 Slowly Changing Dimension(SCD) Design</a></h3>
 
-<p><a href="insight-1.html">Read more…</a></p>
+<p><strong>The Challenge</strong>: How do you ensure a data warehouse can accurately recreate a “point-in-time” report from three years ago without massive storage bloat?</p>
 
-<hr />
+<p><strong>The Insight</strong>: This post breaks down the transition from Silver to Gold layers, defining which business attributes require historical versioning (Type 2) versus simple overwrites (Type 1). I discuss my specific metadata framework—using effective dating, current_ind logic, and nanosecond offsets—to prevent overlapping timelines and handle the “ghosts” of source system soft-deletes.</p>
 
-<h3 id="risk--scale-mitigation"><a href="insight-2.html">Risk &amp; Scale Mitigation</a></h3>
-<p>Moving 20 years of data is a liability-heavy task. Learn about implementing rigorous governance and validation frameworks to ensure data integrity for thousands of stakeholders.</p>
+<p><strong>Key Topics</strong>: Audit Metadata, Time-Zone Alignment, Effective Dating, Soft-Delete Handling.</p>
 
-<p><a href="insight-2.html">Read more…</a></p>
+<p><a href="/pages/insights/insight-1.html">Read more…</a></p>
 
 <hr />
 
-<h3 id="the-engineering-led-architect"><a href="insight-3.html">The Engineering-Led Architect</a></h3>
-<p>Why architectural designs must be grounded in reality. Understanding the “plumbing” of data (Python, SQL, ETL/ELT) is as critical as the high-level vision.</p>
+<h3 id="star-schema-design-for-performance-and-scale"><a href="/pages/insights/insight-2.html">Star Schema Design for Performance and Scale</a></h3>
 
-<p><a href="insight-3.html">Read more…</a></p>
+<p><strong>The Challenge</strong>: Academic data models often look “beautiful” on paper but fail the “5-second dashboard load” test in production.</p>
+
+<p><strong>The Insight</strong>: A deep dive into why I favor a flattened Star Schema over complex Snowflaking for high-scale environments. I discuss the critical decision-making process behind defining Fact Grain, managing multi-address dimensions, and the necessity of Summary Facts for executive KPIs. I argue that a Data Architect’s job isn’t done until they’ve collaborated with front-end developers to shift heavy calculations into the Gold layer.</p>
+
+<p><strong>Key Topics</strong>: Fact Grain, Surrogate vs. Business Keys, Partitioning, Summary vs. Detail Facts.</p>
+
+<p><a href="/pages/insights/insight-2.html">Read more…</a></p>
+
+<hr />
+
+<h3 id="the-engineering-led-architect"><a href="/pages/insights/insight-3.html">The Engineering-Led Architect</a></h3>
+
+<p><strong>The Challenge</strong>: When a 200-table Medallion architecture misses its 8:00 AM SLA, the fix is rarely just a missing index or query optimization</p>
+
+<p><strong>The Insight</strong>: I share a case study where I reduced a daily load process from 8 hours to under 2.5 hours—not by rewriting SQL, but by decoupling the high-level orchestration flow to maximize compute utilization. I also cover micro-level optimizations in Databricks, including refactoring redundant MERGE statements, DAG caching, and Z-Ordering for high-cardinality queries.</p>
+
+<p><strong>Key Topics</strong>: Orchestration Design, Spark DAG Optimization, Delta Lake Merges, Z-Ordering.</p>
+
+<p><a href="/pages/insights/insight-3.html">Read more…</a></p>
+
+<hr />
+
+<h3 id="handling-data-quality-withing-databricks-pipeline"><a href="/pages/Databricks/Databricks_HandleDataQuality.html">Handling Data Quality withing Databricks pipeline</a></h3>
+
+<p><strong>The Challenge</strong>: How would someone handle Data Quality in ETL Pipelines?</p>
+
+<p><strong>The Insight</strong>: a structured, rule-based approach to managing Data Quality (DQ) within Databricks-based ETL pipelines.</p>
+
+<p><strong>Key Topics</strong>: Data Quality, ETL Pipelien transformations</p>
+
+<p><a href="/pages/Databricks/Databricks_HandleDataQuality.html">Read more…</a></p>
 
       </section>
       <!--

@@ -15,23 +15,23 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Risk &amp; Scale Mitigation | Krzysztof Rogowski</title>
+<title>On Prem Data Warehouse with PBI Reports | Krzysztof Rogowski</title>
 <meta name="generator" content="Jekyll v3.10.0" />
-<meta property="og:title" content="Risk &amp; Scale Mitigation" />
+<meta property="og:title" content="On Prem Data Warehouse with PBI Reports" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Solution Architecture Data Modeling Cloud Data Warehousing Enterprise BI Strategy Data Governance Senior Engineering Leadership View My LinkedIn Profile" />
 <meta property="og:description" content="Solution Architecture Data Modeling Cloud Data Warehousing Enterprise BI Strategy Data Governance Senior Engineering Leadership View My LinkedIn Profile" />
-<link rel="canonical" href="http://0.0.0.0:4000/insight-2.html" />
-<meta property="og:url" content="http://0.0.0.0:4000/insight-2.html" />
+<link rel="canonical" href="http://0.0.0.0:4000/pages/solutions/solution-2.html" />
+<meta property="og:url" content="http://0.0.0.0:4000/pages/solutions/solution-2.html" />
 <meta property="og:site_name" content="Krzysztof Rogowski" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Risk &amp; Scale Mitigation" />
+<meta property="twitter:title" content="On Prem Data Warehouse with PBI Reports" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"Solution Architecture Data Modeling Cloud Data Warehousing Enterprise BI Strategy Data Governance Senior Engineering Leadership View My LinkedIn Profile","headline":"Risk &amp; Scale Mitigation","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://0.0.0.0:4000/images/ProfileImage_Krzysztof.jpg?raw=true"}},"url":"http://0.0.0.0:4000/insight-2.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"Solution Architecture Data Modeling Cloud Data Warehousing Enterprise BI Strategy Data Governance Senior Engineering Leadership View My LinkedIn Profile","headline":"On Prem Data Warehouse with PBI Reports","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://0.0.0.0:4000/images/ProfileImage_Krzysztof.jpg?raw=true"}},"url":"http://0.0.0.0:4000/pages/solutions/solution-2.html"}</script>
 <!-- End Jekyll SEO tag -->
 
-   <link rel="stylesheet" href="/assets/css/style.css?v=7274ebaec8f4da4ff619900e5dddde93bb2b5a74">
+   <link rel="stylesheet" href="/assets/css/style.css?v=45d2e0de9aba987aa15b1097977f1cdfe9bfff9b">
    <!--[if lt IE 9]>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
    <![endif]-->
@@ -86,6 +86,8 @@
          
          <li><a href="/">Strategic Overview</a></li>
          
+         <li><a href="/insights.html">Insights</a></li>
+         
          <li><a href="/architectural-case-studies.html">Architectural Case Studies</a></li>
          
          <li><a href="/solutions-and-capabilities.html">Solutions & Capabilities</a></li>
@@ -116,10 +118,23 @@
                
       </header>
       <section>
-         <h1 id="risk--scale-mitigation-in-data-migration">Risk &amp; Scale Mitigation in Data Migration</h1>
+         <h1 id="on-prem-date-warehouse-with-pbi-reports-via-report-server">On Prem Date Warehouse with PBI Reports via Report Server</h1>
 
-<p>Moving 20 years of accumulated data is a liability-heavy task. It requires more than just data movement tools; it demands rigorous governance and validation frameworks.
-I focus on ensuring data integrity for up to 22,000 stakeholders by implementing strict validation gates and governance policies that prevent data swamps and ensure trust in the new platform.</p>
+<p><img src="/images/LocalDataWarehouse.jpg?raw=true" /></p>
+
+<p>A Data Warehouse/Mart solution loading data into Staging/Data Warehouse/Data Martbronse.  Project Portal was implemented via SharePoint to help manage news, reports, requests, documents.  Due to restrictions and security requirements data was kept in a internal Cloud, reporting was rendered via PBI Report Server.</p>
+
+<ul>
+  <li>Role: Solution Designer/Architect &amp; Lead Developer.</li>
+  <li>Deployment: CI/CD via DevOps</li>
+  <li>Portal: Website via Sharepoint</li>
+  <li>Data Modelling: Power Designer</li>
+  <li>Analytics: Multidimensional Model(MDM), Tabuler Model(TAB)</li>
+  <li>Processing: ETL via SSIS</li>
+  <li>Reporting: Power BI on Report Server</li>
+  <li>Data Sources: Oracle DB, Rest API connected to SSAS Tabular(TAB) cube, Many CSV files, Many Excel Files, Beyond2020 files, Sharepoint Lists</li>
+  <li>Data Target: Microsoft SQL Server</li>
+</ul>
 
       </section>
       <!--

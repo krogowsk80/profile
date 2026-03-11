@@ -4,7 +4,7 @@ title: Insights
 ---
 # Insights
 
-### [Type1/Type2 Slowly Changing Dimension(SCD) Design]({% link insights/insight-1.md %})
+### [Type1/Type2 Slowly Changing Dimension(SCD) Design](insight-1.html)
 
 **The Challenge**: How do you ensure a data warehouse can accurately recreate a "point-in-time" report from three years ago without massive storage bloat?
 
@@ -16,7 +16,7 @@ title: Insights
 
 ---
 
-### [Star Schema Design for Performance and Scale]({% link insights/insight-2.md %})
+### [Star Schema Design for Performance and Scale](insight-2.html)
 
 **The Challenge**: Academic data models often look "beautiful" on paper but fail the "5-second dashboard load" test in production.
 
@@ -28,7 +28,7 @@ title: Insights
 
 ---
 
-### [The Engineering-Led Architect]({% link pages/insights/insight-3.md %})
+### [The Engineering-Led Architect](insight-3.html)
 
 **The Challenge**: When a 200-table Medallion architecture misses its 8:00 AM SLA, the fix is rarely just a missing index or query optimization
 
@@ -40,7 +40,7 @@ title: Insights
 
 ---
 
-### [Handling Data Quality withing Databricks pipeline]({% link pages/Databricks/Databricks_HandleDataQuality.md %})
+### [Handling Data Quality withing Databricks pipeline](Databricks_HandleDataQuality.html)
 
 **The Challenge**: How would someone handle Data Quality in ETL Pipelines?
 

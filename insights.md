@@ -16,7 +16,7 @@ title: Insights
 
 ---
 
-### [Star Schema Design for Performance and Scale](insight-2.html)
+### [Star Schema Design for Performance and Scale]({% link pages/insights/insight-2.md %})
 
 **The Challenge**: Academic data models often look "beautiful" on paper but fail the "5-second dashboard load" test in production.
 
@@ -28,7 +28,7 @@ title: Insights
 
 ---
 
-### [The Engineering-Led Architect](insight-3.html)
+### [The Engineering-Led Architect]({% link pages/insights/insight-3.md %})
 
 **The Challenge**: When a 200-table Medallion architecture misses its 8:00 AM SLA, the fix is rarely just a missing index or query optimization
 
@@ -40,7 +40,7 @@ title: Insights
 
 ---
 
-### [Handling Data Quality withing Databricks pipeline](Databricks_HandleDataQuality.html)
+### [Handling Data Quality withing Databricks pipeline]({% link pages/Databricks/Databricks_HandleDataQuality.md %})
 
 **The Challenge**: How would someone handle Data Quality in ETL Pipelines?
 

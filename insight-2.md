@@ -14,7 +14,7 @@ Over the last 13 years, I’ve architected data platforms across government, ban
 
 Here is my playbook for designing dimension and fact tables that actually perform in the real world.
 
-![A clean, high-contrast architectural diagram comparing a streamlined Star Schema on the left to a cluttered, multi-layered Snowflake Schema on the right, with a red 'X' over the Snowflake Schema to indicate it is an anti-pattern for performance.]( /images/Insights/FactDimension_SnowFlakeVSStarSchema_DBModellFocus.jpg)
+![A clean, high-contrast architectural diagram comparing a streamlined Star Schema on the left to a cluttered, multi-layered Snowflake Schema on the right, with a red 'X' over the Snowflake Schema to indicate it is an anti-pattern for performance.](/images/Insights/FactDimension_SnowFlakeVSStarSchema_DBModellFocus.jpg)
 
 ## Dimensions: Keep it Flat, Avoid the Snowflake
 When designing dimensions, my rule is simple: I strongly prefer a Star Schema over a Snowflake Schema. I actively avoid building dimensions off of dimensions. Every additional join you introduce into a query path degrades performance, especially in distributed cloud architectures.
@@ -43,7 +43,7 @@ The Fact table is the numerical engine of your data model. It should consist ent
 ### Defining the Grain
 The most critical decision in fact table design is defining its grain—what exactly does one single row represent? The grain is driven by the Fact’s Business Key. Is one row a single item on a receipt? Is it the entire receipt? Is it a daily snapshot of an account balance? If you do not explicitly define and document the grain of the fact, you will inevitably end up with double-counting errors in your BI layer.
 
-![A detailed entity-relationship diagram (ERD) showing a central Fact Table containing only integer Foreign Keys and numeric Measures, surrounded by denormalized Dimension Tables containing descriptive text attributes.]( /images/Insights/FactDimension_MeasuresAndDimensions_DBModellFocus.jpg)
+![A detailed entity-relationship diagram (ERD) showing a central Fact Table containing only integer Foreign Keys and numeric Measures, surrounded by denormalized Dimension Tables containing descriptive text attributes.](/images/Insights/FactDimension_MeasuresAndDimensions_DBModellFocus.jpg)
 
 ## Scale and Performance: Partitioning the Details
 When dealing with massive datasets—such as 200+ million row fact tables—a pristine Star Schema is not enough on its own. You must engineer for the physical realities of data retrieval.

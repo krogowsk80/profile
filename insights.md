@@ -4,7 +4,7 @@ title: Insights
 ---
 # Insights
 
-### [Type1/Type2 Slowly Changing Dimension(SCD) Design](/pages/insights/insight-1.html)
+### [Type1/Type2 Slowly Changing Dimension(SCD) Design]({% link insights/insight-1.html %})
 
 **The Challenge**: How do you ensure a data warehouse can accurately recreate a "point-in-time" report from three years ago without massive storage bloat?
 
@@ -12,11 +12,11 @@ title: Insights
 
 **Key Topics**: Audit Metadata, Time-Zone Alignment, Effective Dating, Soft-Delete Handling.
 
-[Read more...](/pages/insights/insight-1.html)
+[Read more...]({% link insights/insight-1.html %})
 
 ---
 
-### [Star Schema Design for Performance and Scale](/pages/insights/insight-2.html)
+### [Star Schema Design for Performance and Scale]({% link insights/insight-2.html %})
 
 **The Challenge**: Academic data models often look "beautiful" on paper but fail the "5-second dashboard load" test in production.
 
@@ -24,11 +24,11 @@ title: Insights
 
 **Key Topics**: Fact Grain, Surrogate vs. Business Keys, Partitioning, Summary vs. Detail Facts.
 
-[Read more...](/pages/insights/insight-2.html)
+[Read more...]({% link insights/insight-2.html %})
 
 ---
 
-### [The Engineering-Led Architect](/pages/insights/insight-3.html)
+### [The Engineering-Led Architect]({% link insights/insight-3.html %})
 
 **The Challenge**: When a 200-table Medallion architecture misses its 8:00 AM SLA, the fix is rarely just a missing index or query optimization
 
@@ -36,11 +36,11 @@ title: Insights
 
 **Key Topics**: Orchestration Design, Spark DAG Optimization, Delta Lake Merges, Z-Ordering.
 
-[Read more...](/pages/insights/insight-3.html)
+[Read more...]({% link insights/insight-3.html %})
 
 ---
 
-### [Handling Data Quality withing Databricks pipeline](/pages/Databricks/Databricks_HandleDataQuality.html)
+### [Handling Data Quality withing Databricks pipeline]({% link Databricks/Databricks_HandleDataQuality.html %})
 
 **The Challenge**: How would someone handle Data Quality in ETL Pipelines?
 
@@ -48,4 +48,4 @@ title: Insights
 
 **Key Topics**: Data Quality, ETL Pipelien transformations
 
-[Read more...](/pages/Databricks/Databricks_HandleDataQuality.html)
+[Read more...]({% link Databricks/Databricks_HandleDataQuality.html %})

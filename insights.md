@@ -4,7 +4,7 @@ title: Insights
 ---
 # Insights
 
-### [Type1/Type2 Slowly Changing Dimension(SCD) Design]({% link pages/insights/insight-1.md %})
+### [Type1/Type2 Slowly Changing Dimension(SCD) Design]({% link insights/insight-1.md %})
 
 **The Challenge**: How do you ensure a data warehouse can accurately recreate a "point-in-time" report from three years ago without massive storage bloat?
 
@@ -16,7 +16,7 @@ title: Insights
 
 ---
 
-### [Star Schema Design for Performance and Scale]({% link pages/insights/insight-2.md %})
+### [Star Schema Design for Performance and Scale]({% link insights/insight-2.md %})
 
 **The Challenge**: Academic data models often look "beautiful" on paper but fail the "5-second dashboard load" test in production.
 

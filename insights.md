@@ -4,7 +4,7 @@ title: Insights
 ---
 # Insights
 
-### [Type1/Type2 Slowly Changing Dimension(SCD) Design](insight-1.html)
+### [Type1/Type2 Slowly Changing Dimension(SCD) Design]({% link pages/insights/insight-1.md %})
 
 **The Challenge**: How do you ensure a data warehouse can accurately recreate a "point-in-time" report from three years ago without massive storage bloat?
 

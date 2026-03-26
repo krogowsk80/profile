@@ -21,17 +21,17 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Solution Architecture Data Modeling Cloud Data Warehousing Enterprise BI Strategy Data Governance Senior Engineering Leadership View My LinkedIn Profile" />
 <meta property="og:description" content="Solution Architecture Data Modeling Cloud Data Warehousing Enterprise BI Strategy Data Governance Senior Engineering Leadership View My LinkedIn Profile" />
-<link rel="canonical" href="https://github.com/pages/krogowsk80/profile/insight-1.html" />
-<meta property="og:url" content="https://github.com/pages/krogowsk80/profile/insight-1.html" />
+<link rel="canonical" href="https://github.com/profile/insight-1.html" />
+<meta property="og:url" content="https://github.com/profile/insight-1.html" />
 <meta property="og:site_name" content="Krzysztof Rogowski" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Type1/Type2 Slowly Changing Dimension(SCD) Design" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"Solution Architecture Data Modeling Cloud Data Warehousing Enterprise BI Strategy Data Governance Senior Engineering Leadership View My LinkedIn Profile","headline":"Type1/Type2 Slowly Changing Dimension(SCD) Design","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://github.com/pages/krogowsk80/profile/images/ProfileImage_Krzysztof.jpg?raw=true"}},"url":"https://github.com/pages/krogowsk80/profile/insight-1.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"Solution Architecture Data Modeling Cloud Data Warehousing Enterprise BI Strategy Data Governance Senior Engineering Leadership View My LinkedIn Profile","headline":"Type1/Type2 Slowly Changing Dimension(SCD) Design","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://github.com/profile/images/ProfileImage_Krzysztof.jpg?raw=true"}},"url":"https://github.com/profile/insight-1.html"}</script>
 <!-- End Jekyll SEO tag -->
 
-   <link rel="stylesheet" href="/pages/krogowsk80/profile/assets/css/style.css?v=d02c7ed53c7a149f60ab80887cf3c3bf24de74b3">
+   <link rel="stylesheet" href="/profile/assets/css/style.css?v=3927f6f4dd7fba673a7a0d259e571fcbc844ae3a">
    <!--[if lt IE 9]>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
    <![endif]-->
@@ -84,30 +84,30 @@
    <nav class="topnav">
       <ul>
          
-         <li><a href="/pages/krogowsk80/profile/">Strategic Overview</a></li>
+         <li><a href="/profile/">Strategic Overview</a></li>
          
-         <li><a href="/pages/krogowsk80/profile/insights.html">Insights</a></li>
+         <li><a href="/profile/insights.html">Insights</a></li>
          
-         <li><a href="/pages/krogowsk80/profile/architectural-case-studies.html">Architectural Case Studies</a></li>
+         <li><a href="/profile/architectural-case-studies.html">Architectural Case Studies</a></li>
          
-         <li><a href="/pages/krogowsk80/profile/solutions-and-capabilities.html">Solutions & Capabilities</a></li>
+         <li><a href="/profile/solutions-and-capabilities.html">Solutions & Capabilities</a></li>
          
-         <li><a href="/pages/krogowsk80/profile/work-with-me.html">Work With Me</a></li>
+         <li><a href="/profile/work-with-me.html">Work With Me</a></li>
          
          <li><button id="theme-toggle" title="Toggle Night Mode">🌙</button></li>
       </ul>
    </nav>
    <div class="wrapper">
       <header>
-         <h1><a href="https://github.com/pages/krogowsk80/profile/">Krzysztof Rogowski</a></h1>
+         <h1><a href="https://github.com/profile/">Krzysztof Rogowski</a></h1>
          
-         <img src="/pages/krogowsk80/profile/images/ProfileImage_Krzysztof.jpg?raw=true" alt="Logo" />
+         <img src="/profile/images/ProfileImage_Krzysztof.jpg?raw=true" alt="Logo" />
          
          
          <p><br> Solution Architecture | Data Modeling | Cloud Data Warehousing | Enterprise BI Strategy | Data Governance | Senior Engineering Leadership <br> <br> <br> <a href="https://www.linkedin.com/in/krzysztof-rogowski-1199036">View My LinkedIn Profile</a>  <br><br> <br><br> <br><br>
 </p>
          
-         <p class="view"><a href="/pages/krogowsk80/profile/contact.html" style="background-color: #2ea44f; color: white; padding: 8px 16px; text-decoration: none; border-radius: 4px; font-weight: bold; display: inline-block;">Contact Me</a></p>
+         <p class="view"><a href="/profile/contact.html" style="background-color: #2ea44f; color: white; padding: 8px 16px; text-decoration: none; border-radius: 4px; font-weight: bold; display: inline-block;">Contact Me</a></p>
 
          
          <!--         
@@ -129,7 +129,7 @@
 
 <p>Here is a deep dive into how I architect these solutions for scale, performance, and unshakeable data integrity.</p>
 
-<p><img src="/pages/krogowsk80/profile/images/Insights/Type1Type2_UnifiedMedallion_DBModelFocus.jpg" alt="A conceptual diagram showing data flowing from a source system into a Medallion architecture, moving from Bronze to Silver, and finally into a Gold Star Schema, highlighting the transformation of a single record over time." /></p>
+<p><img src="/profile/images/Insights/Type1Type2_UnifiedMedallion_DBModelFocus.jpg" alt="A conceptual diagram showing data flowing from a source system into a Medallion architecture, moving from Bronze to Silver, and finally into a Gold Star Schema, highlighting the transformation of a single record over time." /></p>
 
 <h2 id="the-core-philosophy-what-needs-to-be-tracked">The Core Philosophy: What Needs to be Tracked?</h2>
 <p>At its simplest, SCD logic is about defining exactly what changes need to be tracked in a table given the business keys for a given entity. Not all data is created equal, and treating every minor update as a historical event will bloat your data warehouse and destroy query performance.</p>
@@ -161,7 +161,7 @@
 
 <p><code class="language-plaintext highlighter-rouge">rec_type_cd</code>: A custom record type code I always add to help classify the nature of the row or the ingestion pattern that created it.</p>
 
-<p><img src="/pages/krogowsk80/profile/images/Insights/Type1Type2_SDC_TableColumns_DBModelFocus.jpg" alt="A visual representation of a database table schema, highlighting the specific metadata columns: record_start_effective_dt, record_end_effective_dt, current_ind, last_update_dt, create_dt, and rec_type_cd, with brief descriptions pointing to each." /></p>
+<p><img src="/profile/images/Insights/Type1Type2_SDC_TableColumns_DBModelFocus.jpg" alt="A visual representation of a database table schema, highlighting the specific metadata columns: record_start_effective_dt, record_end_effective_dt, current_ind, last_update_dt, create_dt, and rec_type_cd, with brief descriptions pointing to each." /></p>
 
 <h2 id="executing-the-logic-at-scale">Executing the Logic at Scale</h2>
 <p>When a new file or stream arrives from the source system, the ETL/ELT engine (whether that is PySpark on Databricks, Azure Data Factory, or dbt on Redshift) must compare the incoming business keys against the target table.</p>
@@ -211,7 +211,7 @@
   </li>
 </ul>
 
-<p><img src="/pages/krogowsk80/profile/images/Insights/Type1Type2_DecisionTreeDBActionsSampel_DBModelFocus.jpg" alt="A flowchart showing the decision tree for an incoming data record. It branches into 'New Record', 'Type 1 Change', 'Type 2 Change', and 'Soft Delete', detailing the specific database actions for each path." /></p>
+<p><img src="/profile/images/Insights/Type1Type2_DecisionTreeDBActionsSampel_DBModelFocus.jpg" alt="A flowchart showing the decision tree for an incoming data record. It branches into 'New Record', 'Type 1 Change', 'Type 2 Change', and 'Soft Delete', detailing the specific database actions for each path." /></p>
 
 <h2 id="conclusion">Conclusion</h2>
 <p>Data modeling is not just about drawing boxes and lines; it is about writing the rules of reality for your organization’s history. By implementing rigorous, defensively designed SCD Type 1 and Type 2 logic—accounting for microsecond overlaps, time zone drifts, and soft deletes—you build a foundation that analysts and data scientists can actually trust.</p>
@@ -228,7 +228,7 @@
       </footer>
       -->
    </div>
-   <script src="/pages/krogowsk80/profile/assets/js/scale.fix.js"></script>
+   <script src="/profile/assets/js/scale.fix.js"></script>
    <script>
       const toggleButton = document.getElementById('theme-toggle');
       const body = document.body;

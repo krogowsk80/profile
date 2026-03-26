@@ -31,7 +31,7 @@
 {"@context":"https://schema.org","@type":"WebPage","description":"Solution Architecture Data Modeling Cloud Data Warehousing Enterprise BI Strategy Data Governance Senior Engineering Leadership View My LinkedIn Profile","headline":"Star Schema Design for Performance and Scale","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://krogowsk80.github.io/profile/profile/images/ProfileImage_Krzysztof.jpg?raw=true"}},"url":"https://krogowsk80.github.io/profile/profile/pages/insights/insight-2.html"}</script>
 <!-- End Jekyll SEO tag -->
 
-   <link rel="stylesheet" href="/profile/assets/css/style.css?v=6fa18c1903656515c527f730f759d472a78964a3">
+   <link rel="stylesheet" href="/profile/assets/css/style.css?v=213acaafefafaa9fa27f7e7775632da5988dd959">
    <!--[if lt IE 9]>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
    <![endif]-->
@@ -129,7 +129,7 @@
 
 <p>Here is my playbook for designing dimension and fact tables that actually perform in the real world.</p>
 
-<p><img src="/images/Insights/FactDimension_SnowFlakeVSStarSchema_DBModellFocus.jpg" alt="A clean, high-contrast architectural diagram comparing a streamlined Star Schema on the left to a cluttered, multi-layered Snowflake Schema on the right, with a red 'X' over the Snowflake Schema to indicate it is an anti-pattern for performance." /></p>
+<p><img src="images/Insights/FactDimension_SnowFlakeVSStarSchema_DBModellFocus.jpg" alt="A clean, high-contrast architectural diagram comparing a streamlined Star Schema on the left to a cluttered, multi-layered Snowflake Schema on the right, with a red 'X' over the Snowflake Schema to indicate it is an anti-pattern for performance." /></p>
 
 <h2 id="dimensions-keep-it-flat-avoid-the-snowflake">Dimensions: Keep it Flat, Avoid the Snowflake</h2>
 <p>When designing dimensions, my rule is simple: I strongly prefer a Star Schema over a Snowflake Schema. I actively avoid building dimensions off of dimensions. Every additional join you introduce into a query path degrades performance, especially in distributed cloud architectures.</p>
@@ -160,7 +160,7 @@
 <h3 id="defining-the-grain">Defining the Grain</h3>
 <p>The most critical decision in fact table design is defining its grain—what exactly does one single row represent? The grain is driven by the Fact’s Business Key. Is one row a single item on a receipt? Is it the entire receipt? Is it a daily snapshot of an account balance? If you do not explicitly define and document the grain of the fact, you will inevitably end up with double-counting errors in your BI layer.</p>
 
-<p><img src="/images/Insights/FactDimension_MeasuresAndDimensions_DBModellFocus.jpg" alt="A detailed entity-relationship diagram (ERD) showing a central Fact Table containing only integer Foreign Keys and numeric Measures, surrounded by denormalized Dimension Tables containing descriptive text attributes." /></p>
+<p><img src="images/Insights/FactDimension_MeasuresAndDimensions_DBModellFocus.jpg" alt="A detailed entity-relationship diagram (ERD) showing a central Fact Table containing only integer Foreign Keys and numeric Measures, surrounded by denormalized Dimension Tables containing descriptive text attributes." /></p>
 
 <h2 id="scale-and-performance-partitioning-the-details">Scale and Performance: Partitioning the Details</h2>
 <p>When dealing with massive datasets—such as 200+ million row fact tables—a pristine Star Schema is not enough on its own. You must engineer for the physical realities of data retrieval.</p>
